@@ -38,7 +38,7 @@ Analytics.autoTrack('session', {
   }
 });
 
-const App = () => {
+const App = (props) => {
   const initialState = { name: '', description: '' }
   const [formState, setFormState] = useState(initialState)
   const [todos, setTodos] = useState([])
@@ -70,6 +70,7 @@ const App = () => {
     }
   }
 
+  console.log('->>', props)
   return (
     <View style={styles.container}>
       <TextInput
@@ -104,4 +105,13 @@ const styles = StyleSheet.create({
   todoName: { fontSize: 18 }
 })
 
-export default withAuthenticator(App);
+export default withAuthenticator(App, {
+  // Render a sign out button once logged in
+  includeGreetings: true,
+  // // Show only certain components
+  // authenticatorComponents: [MyComponents],
+  // // display federation/social provider buttons 
+  // federated: { myFederatedConfig },
+  // // customize the UI/styling
+  // theme: { myCustomTheme }
+});
