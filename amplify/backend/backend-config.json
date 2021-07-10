@@ -24,5 +24,11 @@
       "dependsOn": [],
       "customAuth": false
     }
+  },
+  "analytics": {
+    "rnamplify": {
+      "service": "Pinpoint",
+      "providerPlugin": "awscloudformation"
+    }
   }
 }

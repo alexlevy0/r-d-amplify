@@ -1,6 +1,6 @@
 {
     "identityPoolName": "rnamplify15e245b5_identitypool_15e245b5",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "rnampl15e245b5",
     "userPoolName": "rnamplify15e245b5_userpool_15e245b5",
     "autoVerifiedAttributes": [
